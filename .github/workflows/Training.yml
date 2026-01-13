@@ -24,7 +24,10 @@ jobs:
           pip install pytest
 
       - name: Run PyTest
-        run: pytest -v
+        run: pytest -
+        
+      - name : run PRoject
+        run : python manage.py runserver  
 
       - name: Upload success flag file
         uses: actions/upload-artifact@v4

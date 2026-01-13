@@ -1,4 +1,4 @@
-name: Python CI Pipeline with Success Flag
+name: Training PRoject pipeline
 
 on:
   push:

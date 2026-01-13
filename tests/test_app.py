@@ -1,5 +1,3 @@
-# -------- App Logic --------
-
 def add(a, b):
     return a + b
 
@@ -13,8 +11,6 @@ def div(a, b):
     return a / b
 
 
-# -------- Test Cases --------
-
 def test_add():
     assert add(2, 3) == 5
 
@@ -26,10 +22,3 @@ def test_mul():
 
 def test_div():
     assert div(10, 2) == 5
-
-
-
-def pytest_sessionfinish(session, exitstatus):
-    if exitstatus == 0:
-        with open("example.txt", "w") as f:
-            f.write("CI pipeline processed project successfully\n")

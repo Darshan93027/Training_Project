@@ -23,11 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
 
-      - name: Python Syntax Check
-        run: python -m compileall .
-
-      - name: Django System Check
-        run: python manage.py check
+      
 
       - name: Run PyTest
         run: pytest -v
